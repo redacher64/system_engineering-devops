@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Displays a list of all running processes (all users, all TTYs)
-# in a user-oriented format with hierarchy.
+# Display all running processes in a user-oriented format with hierarchy
 
-ps -eo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --forest
+ps -eo user,started,command --forest
+
 
