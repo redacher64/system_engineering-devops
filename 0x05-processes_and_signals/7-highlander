@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# Displays "To infinity and beyond" indefinitely and reacts to SIGTERM
+# Infinite loop reacting to SIGTERM with a custom message
 
-trap "echo I am invincible!!!" SIGTERM
+trap "echo 'I am invincible!!!'" SIGTERM
 
-while true
-do
+while true; do
     echo "To infinity and beyond"
     sleep 2
 done
+
 
 
