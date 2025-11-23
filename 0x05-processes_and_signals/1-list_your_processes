@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # Display all running processes with user-oriented format and hierarchy
 
-ps -eo user,lstart,cmd --forest
-
+ps auxf
