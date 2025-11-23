@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Infinite loop reacting to SIGTERM with a custom message
+# Displays "To infinity and beyond" indefinitely and reacts to SIGTERM
 
 trap "echo I am invincible!!!" SIGTERM
 
@@ -8,4 +8,5 @@ do
     echo "To infinity and beyond"
     sleep 2
 done
+
 
