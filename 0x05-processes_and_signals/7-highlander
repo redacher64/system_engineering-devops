@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-# Displays a message when receiving a SIGTERM signal
+# Ignore SIGTERM to stay alive forever
 
-trap "echo I am invincible!!!" SIGTERM
+trap "" SIGTERM
 
-# Keep the script alive without printing anything
 while true; do
     sleep 1
 done
